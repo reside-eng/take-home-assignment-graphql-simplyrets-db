@@ -1,45 +1,48 @@
 # Introduction
+
 Hi there 👋,
 
 Thanks for taking the time to complete this brief take-home assignment. Please timebox your effort to a maximum of 5 hours.
 
 The goal of this exercise is to evaluate your backend skills (Node.js, GraphQL, 3rd-party integration, and testing). Feel free to make any assumptions, simplifications, or other changes to the problems - though please state those in your write up when you submit this assignment. Please use as many libraries as is reasonable - there is no sense in rebuilding what has been built.
 
-Using Apollo Server and Express.js, you will create a GraphQL endpoint to retrieve a list of properties for sale in a city. SimplyRETS is an API commonly used in real estate world and you will need to use it to retrieve the properties data.
+Using Apollo Server and Express.js, you will create a GraphQL endpoint to retrieve a list of properties for sale in a city. SimplyRETS is an API commonly used in the real estate world and you will need to use it to retrieve the properties data.
 
 Before getting started, please read this document carefully.
 
 **Good luck 🙃**
+
 # Getting started
-With Node 14 installed, run the following commands:
-```  
-$ npm install  
-$ npm run start:db 
-$ npm run start:app
 
-or 
+With latest Node LTS installed, run the following commands in order:
 
-$ yarn install  
-$ yarn start:db 
-$ yarn start:app
+```sh
+yarn install
+yarn start:db
+yarn start:app
 ```  
+
 Navigate to `http://localhost:4000/graphql`.
+
 ## What will you find inside this boilerplate
+
 In this boilerplate, you will find:
 - The main entry file: `index.js`
 - The mongodb in-memory server file: `database.js`
   - You shouldn't have to touch this file.
   - It's important to start the DB first before running your app
   - The database uri: *mongodb://127.0.0.1:27017/properties?*
-  - This is a mongod istance that spawns  on the side of your application. **NOTE**: the data does not persist when you shut down the server. We seed two users with access tokens on database start. Please read Acceptance Criteria below for more details
+  - This is a mongod istance that spawns on the side of your application. **NOTE**: the data does not persist when you shut down the server. We seed two users with access tokens on database start. Please read Acceptance Criteria below for more details
 - All the types from the SimplyRETS API ready to use with GraphQL: `types/index.js`
 - A `README.md` file to document your comments and design decisions
 - Inside the `package.json`, we added the following packages:
-  - `express@4.17.1`,
-  - `apollo-server-express@2.21.0`,
-  - `jest@26.6.3`
+  - `express`,
+  - `apollo-server-express`,
+  - `jest`
+- We have also included mongodb as the driver to seed initial data but please feel free to use any mongo driver you wish
 
 ## SimplyRETS API
+
 SimplyRETS is a platform for developers and agents to build real estate applications and websites.
 
 Their API uses Basic Authentication, which most HTTP libraries will handle for you. To use the test data (which is what this pages uses), you can use the api key `simplyrets` and secret `simplyrets`. Note that these test listings are not live RETS listings but the data, query parameters, and response bodies will all work the same.
@@ -47,6 +50,7 @@ Their API uses Basic Authentication, which most HTTP libraries will handle for y
 Please use the following endpoint: `https://api.simplyrets.com/properties`
 
 # Acceptance criteria
+
 - Use  [Express.js](https://github.com/expressjs/express) as a Node.js HTTP framework
 - Use [Apollo Server](https://www.apollographql.com/docs/apollo-server/getting-started/) as your graphql framework. You can use GraphiQL to interact with your endpoints, you **do not** have to build a client interface. We have included both express & apollo server in package.json for you.
 - Add Bearer HTTP Authentication to restrict access to all GraphQL endpoints. We have seeded the following two users into the users collection for you. No need to add, edit, or delete users.
@@ -88,10 +92,13 @@ query {
 
 
 # What you will be assessed on?
+
 - All functional requirements must be satisfied
 - Production-like code that must be well coded, clean, and commented
 - Tests must be passing and meaningful
 - General Node.js knowledge
+
 # Submission
+
 Once you are satisfied with your assignment, please publish your code and your README file to a Git repository. Please ignore the node_modules folder.  
 
