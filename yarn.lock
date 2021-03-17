@@ -3490,12 +3490,12 @@ mongodb-memory-server-core@6.9.6:
   optionalDependencies:
     mongodb "^3.6.2"
 
-mongodb-memory-server-global@6.9.3:
-  version "6.9.3"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-6.9.3.tgz#546605f48ed7c2c53fc497afc1aeae271917f3d4"
-  integrity sha512-J1KNi4n2UBRRbCEBvbrgVoqnsg70IanyYbJourGESIIJcEQOslxEa2KWhjAVrspcroeWz2041FPhnsIJl5HVbw==
+mongodb-memory-server-global@6.9.6:
+  version "6.9.6"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-6.9.6.tgz#fafea0dfdabde110f103fe07072d52217fe87856"
+  integrity sha512-pdtr0gRvbL1wHNeLDWsHbQWeSkPPySdQ0moUyo+LxXHqCnJJGs+0Y5vgDCo1UYkCH9ZkbwFnw+CPmAX3YUXnvQ==
   dependencies:
-    mongodb-memory-server "6.9.3"
+    mongodb-memory-server "6.9.6"
     os "^0.1.1"
 
 mongodb-memory-server@6.9.3:
@@ -3504,6 +3504,13 @@ mongodb-memory-server@6.9.3:
   integrity sha512-VU2ey+fknmZflHltPCznZr9fja8T6K7DTG5m7wSxmQC/Qf/kkKmRGqIPcZoEU5znRR/8m/EaOe+hFWkjmh1W5A==
   dependencies:
     mongodb-memory-server-core "6.9.3"
+
+mongodb-memory-server@6.9.6:
+  version "6.9.6"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-6.9.6.tgz#ced1a100f58363317a562efaf8821726c433cfd2"
+  integrity sha512-BjGPPh5f61lMueG7px9DneBIrRR/GoWUHDvLWVAXhQhKVcwMMXxgeEba6zdDolZHfYAu6aYGPzhOuYKIKPgpBQ==
+  dependencies:
+    mongodb-memory-server-core "6.9.6"
 
 mongodb@3.6.2:
   version "3.6.2"
