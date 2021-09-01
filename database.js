@@ -7,15 +7,13 @@ const { MongoMemoryServer } = require('mongodb-memory-server');
             dbName: 'properties'
         }
     });
-    const uri = await mongod.getUri();
-    const port = await mongod.getPort();
-    const dbPath = await mongod.getDbPath();
-    const dbName = await mongod.getDbName();
+    await mongod.start();
+    const uri = mongod.getUri();
+    const dbName = 'properties';
 
     console.log(`Database uri: ${uri}`);
-    console.log(`Database running on port: ${port}`);
-    console.log(`Database Name: ${dbName}`);
-    console.log(`Local DB Storage path ${dbPath}`);
+    console.log(`Database running on port: 27017`);
+    console.log(`Database Name: properties`);
 
     const MongoClient = require('mongodb').MongoClient;
     MongoClient.connect(uri, function(err, client) {
