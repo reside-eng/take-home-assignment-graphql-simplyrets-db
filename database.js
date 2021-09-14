@@ -22,7 +22,7 @@ const { MongoMemoryServer } = require('mongodb-memory-server');
         const db = client.db(dbName);
         seedUsers(db, function(err, result) {
             if(err) throw new Error("Error seeding");
-            console.log("Seeded the following users into users collection: ", result.ops);
+            console.log(`Seeded ${result.insertedCount} users into users collection.`)
             client.close();
         });
     });
