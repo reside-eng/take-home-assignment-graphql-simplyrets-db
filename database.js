@@ -1,16 +1,16 @@
 const { MongoMemoryServer } = require('mongodb-memory-server');
 (async () => {
-    const mongod = new MongoMemoryServer({
+    const mongod = await MongoMemoryServer.create({
         instance: {
             port: 27017,
             ip: '127.0.0.1',
             dbName: 'properties'
         }
     });
-    const uri = await mongod.getUri();
-    const port = await mongod.getPort();
-    const dbPath = await mongod.getDbPath();
-    const dbName = await mongod.getDbName();
+    const uri = mongod.getUri();
+    const port = mongod.instanceInfo.port;
+    const dbPath = mongod.instanceInfo.dbPath;
+    const dbName = mongod.instanceInfo.dbName;
 
     console.log(`Database uri: ${uri}`);
     console.log(`Database running on port: ${port}`);
