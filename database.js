@@ -1,16 +1,16 @@
 const { MongoMemoryServer } = require('mongodb-memory-server');
 (async () => {
-    const mongod = new MongoMemoryServer({
+    const mongod = await MongoMemoryServer.create({
         instance: {
             port: 27017,
             ip: '127.0.0.1',
             dbName: 'properties'
         }
     });
-    const uri = await mongod.getUri();
-    const port = await mongod.getPort();
-    const dbPath = await mongod.getDbPath();
-    const dbName = await mongod.getDbName();
+    const uri = mongod.getUri();
+    const port = mongod.instanceInfo.port;
+    const dbPath = mongod.instanceInfo.dbPath;
+    const dbName = mongod.instanceInfo.dbName;
 
     console.log(`Database uri: ${uri}`);
     console.log(`Database running on port: ${port}`);
@@ -22,7 +22,7 @@ const { MongoMemoryServer } = require('mongodb-memory-server');
         const db = client.db(dbName);
         seedUsers(db, function(err, result) {
             if(err) throw new Error("Error seeding");
-            console.log("Seeded the following users into users collection: ", result.ops);
+            console.log(`Seeded ${result.insertedCount} users into users collection.`)
             client.close();
         });
     });
