@@ -17,7 +17,7 @@
     "apollo-server-express": "3.3.0",
     "express": "4.17.1",
     "jest": "27.2.0",
-    "mongodb": "4.1.1"
+    "mongodb": "4.1.2"
   },
   "devDependencies": {
     "mongodb-memory-server": "7.4.0",
