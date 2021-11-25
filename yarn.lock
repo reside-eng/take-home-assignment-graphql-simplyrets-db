@@ -2807,10 +2807,10 @@ mongodb-memory-server-core@8.0.1:
     uuid "^8.3.1"
     yauzl "^2.10.0"
 
-mongodb-memory-server-core@8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.0.2.tgz#9e8595692acb696311950f2c0333781458615c12"
-  integrity sha512-dGSC9azBU/lku/3g+PyBl3yjSKhjNzszCg44yoS9sUcNboBaRhMSFb8G57j4YP+rVV/ebg7JGCxRlWwPMTl5nA==
+mongodb-memory-server-core@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.0.3.tgz#a4d070bf0cbe7194dbb1a57d9018636f79b8b67d"
+  integrity sha512-eKEAclR+h0Phy0oMoKlQ6z7fsmcsFt1SdLZJO4SNh9ZQbXsR2tINFBSA2WIAQPyAsfTFEmCtWOUoWKCCdbhZNg==
   dependencies:
     "@types/tmp" "^0.2.2"
     async-mutex "^0.3.2"
