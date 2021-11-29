@@ -20,7 +20,7 @@
     "mongodb": "4.2.0"
   },
   "devDependencies": {
-    "mongodb-memory-server": "8.0.1",
+    "mongodb-memory-server": "8.0.3",
     "mongodb-memory-server-core": "8.0.3",
     "mongodb-memory-server-global": "8.0.3"
   }

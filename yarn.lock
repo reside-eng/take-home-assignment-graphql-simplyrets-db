@@ -2815,12 +2815,12 @@ mongodb-memory-server-global@8.0.3:
     mongodb-memory-server-core "8.0.3"
     tslib "^2.3.1"
 
-mongodb-memory-server@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.0.1.tgz#d95e3a243aa77b0534f02d44645df15b731ead80"
-  integrity sha512-MNPty/WFRlqTlSHsEqQW+jhhNMuhaB10Sl5RbTZwSlPObmVKxMkx1jpjashgCATIQmxPof+f+erzOjblytd3IA==
+mongodb-memory-server@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.0.3.tgz#4c3968855e8c2dc02da43a0da80a2d3fbcad02b4"
+  integrity sha512-MFA3t/Ho7mxghDtAF+hqfjCtnTkxR22apygW/N6hPjYcAWBzYnuLVRTtI286omA8gE5j0/c7G42qXFjRuICdgQ==
   dependencies:
-    mongodb-memory-server-core "8.0.1"
+    mongodb-memory-server-core "8.0.3"
     tslib "^2.3.1"
 
 mongodb@4.2.0, mongodb@^4.1.3:
