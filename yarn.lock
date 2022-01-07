@@ -2809,12 +2809,12 @@ mongodb-memory-server-core@8.1.0:
     uuid "^8.3.1"
     yauzl "^2.10.0"
 
-mongodb-memory-server-global@8.0.4:
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-8.0.4.tgz#411d8f69aa8f046d3d3884399f42044265160939"
-  integrity sha512-ay7ESTVOLmxEjSQ8Bns/7KERsIWaYkvJk19NTDusIgLA04Eqv7fWdEXuwj2NHtE81QL7ULU7sNegmzr0hboI8A==
+mongodb-memory-server-global@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-8.1.0.tgz#5820452eb0bf78a1811c1c44fbe6cbd9843de2fa"
+  integrity sha512-rkH6DA9i6qDrX9BPMrEPFLTG+sAv/KC/J6XiLJnvE/kYVWE1xk98TFavK58MRW9qNlneCGMLxFKbVZE21HjjVg==
   dependencies:
-    mongodb-memory-server-core "8.0.4"
+    mongodb-memory-server-core "8.1.0"
     tslib "^2.3.1"
 
 mongodb-memory-server@8.1.0:
