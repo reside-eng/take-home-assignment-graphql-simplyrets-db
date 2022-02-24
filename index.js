@@ -1,18 +1,14 @@
-const express = require('express');
-const app = express();
+const { ApolloServer } = require('apollo-server');
+const { readFileSync } = require('fs')
 
-// Please use apollo server to implement your graphql query
-// const { ApolloServer } = require('apollo-server-express');
-// const server = new ApolloServer({
-//  //...
-// });
-// server.applyMiddleware({ app, path:"/graphql" });
+const resolvers = require('./resolvers')
+const typeDefs = readFileSync('./schema.graphql').toString('utf-8')
 
-/** Please remove me line 11-14 **/
-app.get('*', (req, res, next) => {
-    res.send("Good luck! 😀")
+const server = new ApolloServer({
+  typeDefs,
+  resolvers
 });
 
-app.listen({ port: 4000 }, () =>
-    console.log(`Listening on http://localhost:4000/graphql`)
+server.listen({ port: 4000 }, () =>
+  console.log(`Listening on http://localhost:4000/graphql`)
 );

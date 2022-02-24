@@ -1,27 +1,28 @@
 {
   "name": "senior-backend-graphql",
   "version": "1.0.0",
-  "description": "",
+  "description": "graphql, simplyrets, and database take-home assignment for interview candidates.",
   "main": "index.js",
   "engines": {
-    "node": "^12"
+    "node": "^16"
   },
   "scripts": {
     "test": "jest",
     "start:app": "node index.js",
     "start:db": "node database.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "3.6.2",
-    "express": "4.17.2",
-    "jest": "27.5.1",
+    "apollo-server": "3.6.3",
+    "graphql": "16.3.0",
     "mongodb": "4.3.1"
   },
   "devDependencies": {
+    "jest": "27.5.1",
     "mongodb-memory-server": "8.4.0",
     "mongodb-memory-server-core": "8.2.0",
     "mongodb-memory-server-global": "8.3.0"
-  }
+  },
+  "license": "UNLICENSED",
+  "author": "Side Inc.",
+  "repository": "https://github.com/reside-eng/take-home-assignment-graphql-simplyrets-db.git"
 }
