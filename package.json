@@ -14,13 +14,13 @@
   "dependencies": {
     "apollo-server": "3.6.3",
     "graphql": "16.3.0",
-    "mongodb": "4.3.1"
+    "mongodb": "4.4.0"
   },
   "devDependencies": {
     "jest": "27.5.1",
     "mongodb-memory-server": "8.4.0",
-    "mongodb-memory-server-core": "8.2.0",
-    "mongodb-memory-server-global": "8.3.0"
+    "mongodb-memory-server-core": "8.4.0",
+    "mongodb-memory-server-global": "8.4.0"
   },
   "license": "UNLICENSED",
   "author": "Side Inc.",
