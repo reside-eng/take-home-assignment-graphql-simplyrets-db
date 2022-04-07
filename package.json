@@ -14,7 +14,7 @@
   "dependencies": {
     "apollo-server": "3.6.7",
     "graphql": "16.3.0",
-    "mongodb": "4.4.1"
+    "mongodb": "4.5.0"
   },
   "devDependencies": {
     "jest": "27.5.1",
