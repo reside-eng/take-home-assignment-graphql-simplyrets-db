@@ -2615,10 +2615,10 @@ mongodb-connection-string-url@^2.5.2:
     "@types/whatwg-url" "^8.2.1"
     whatwg-url "^11.0.0"
 
-mongodb-memory-server-core@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.5.0.tgz#f2667487b16d26fcbcbb292b79c3f9ff42fa19be"
-  integrity sha512-Hv/1QWWUAq5oxkLvQnUFfzprUdJHGA6/i3K5VNUjfiqaDqBteztPAEYXV8NPBxceYYzudoc/py935DNYq+RqVQ==
+mongodb-memory-server-core@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-core/-/mongodb-memory-server-core-8.5.1.tgz#bdfe74a2733e710235cf00c3f534b914d27376e1"
+  integrity sha512-/4hBY5Mqz/IFlI1WeujHQPmdqDdD6Owz7VtH/IQZjHJKmsjSBl3RAr3C52Hzn6KRaxXR0cWIA9IwZYf/OiRimA==
   dependencies:
     "@types/tmp" "^0.2.3"
     async-mutex "^0.3.2"
@@ -2637,20 +2637,20 @@ mongodb-memory-server-core@8.5.0:
     uuid "^8.3.1"
     yauzl "^2.10.0"
 
-mongodb-memory-server-global@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-8.5.0.tgz#c3361c906573ffa7be6bf3499c56c593877ed883"
-  integrity sha512-+lXAtPwHILO6VT1Dw07XPBw17cbRUnybassNA9Y6m17O1iSvB7oP5xTpj1a8GlgMBYPiW/1mKO/b2iT9iPqnNQ==
+mongodb-memory-server-global@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server-global/-/mongodb-memory-server-global-8.5.1.tgz#405c4bec72dccccd849835adcd07fd2ba3634035"
+  integrity sha512-iLW0Sn0cv4hlcKqQfZIrOr1BdF1t3fRTmNhU8Xg+v1XyFQLT0VCEcFbLLh4nyRKd8IMKj2VsT3EBE2j/5ZJa8Q==
   dependencies:
-    mongodb-memory-server-core "8.5.0"
+    mongodb-memory-server-core "8.5.1"
     tslib "^2.3.1"
 
-mongodb-memory-server@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.5.0.tgz#325902a5645b90ab796caa9b4bb31fd682f521ae"
-  integrity sha512-bU6B+sat/qFep5EqZ5KpVM+xYssYKR8/VUZT9SanaP69nSLbYGNwny7b8Egs3DvfLR874uhspGKOOdQV8LEqxA==
+mongodb-memory-server@8.5.1:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/mongodb-memory-server/-/mongodb-memory-server-8.5.1.tgz#804adc3137dcf927a8c496baff244266417ffe35"
+  integrity sha512-s1J+eyTldu2cv8esyr83DLR+ybzAkrTxkHG27E+MlZ3pxIXFBjej0GD09pkTaVzUYhBbqsfHrh7qj6fkkRwCxg==
   dependencies:
-    mongodb-memory-server-core "8.5.0"
+    mongodb-memory-server-core "8.5.1"
     tslib "^2.3.1"
 
 mongodb@4.5.0, mongodb@^4.5.0:
