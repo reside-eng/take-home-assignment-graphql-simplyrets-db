@@ -12,7 +12,7 @@
     "start:db": "node database.js"
   },
   "dependencies": {
-    "apollo-server": "3.10.1",
+    "apollo-server": "3.10.2",
     "graphql": "16.6.0",
     "mongodb": "4.9.0"
   },
