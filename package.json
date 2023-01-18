@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "jest": "29.3.1",
-    "mongodb-memory-server": "8.11.1",
-    "mongodb-memory-server-core": "8.11.1",
-    "mongodb-memory-server-global": "8.11.1"
+    "mongodb-memory-server": "8.11.2",
+    "mongodb-memory-server-core": "8.11.2",
+    "mongodb-memory-server-global": "8.11.2"
   },
   "license": "UNLICENSED",
   "author": "Side Inc.",
